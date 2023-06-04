@@ -37,6 +37,10 @@ const MenuBlock = styled(motion.nav)`
   width: 100vw;
   height: 100vh;
   background-color: #df78615e;
+
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, white 1px);
+  background-size: 4px 4px;
+
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(7px);
