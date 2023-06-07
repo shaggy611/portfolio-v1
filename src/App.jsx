@@ -1,38 +1,43 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import PortfolioContext from './context/PortfolioContext'
 import MenuContext from './context/MenuContext'
-import { heroMainData } from './data/data'
+import heroData from './data/data'
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme'
 import GlobalStyle from './styles/globalStyles'
 
+import MainLayout from './layouts/MainLayout'
 import Main from './components/sections/Main'
-import Menu from './components/Menu'
-import ButtonMenu from './components/ButtonMenu'
-import Logo from './components/Logo'
+import About from './components/sections/About'
+import Projects from './components/sections/Projects'
 
 function App() {
-  const [hero, setHero] = useState({})
+  const [hero, setHero] = useState({ ...heroData })
   const [menuActive, setMenuActive] = useState(false)
+  console.log(hero)
 
-  console.log(menuActive)
-
-  useEffect(() => {
-    setHero({ ...heroMainData })
-  }, [])
+  // useEffect(() => {
+  //   setHero({ ...heroData })
+  // }, [])
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <PortfolioContext.Provider value={{ hero }}>
-        <MenuContext.Provider value={{ menuActive, setMenuActive }}>
-          <Logo />
-          <ButtonMenu />
-          <Menu />
-          <Main />
-        </MenuContext.Provider>
-      </PortfolioContext.Provider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <PortfolioContext.Provider value={hero}>
+          <MenuContext.Provider value={{ menuActive, setMenuActive }}>
+            <Routes>
+              <Route path='/' element={<MainLayout />}>
+                <Route index element={<Main />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+              </Route>
+            </Routes>
+          </MenuContext.Provider>
+        </PortfolioContext.Provider>
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 

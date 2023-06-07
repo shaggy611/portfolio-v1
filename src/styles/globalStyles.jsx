@@ -2,23 +2,22 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 :root {
-  --bg-color-main: ${(props) => props.theme.colors.backgroundColorMain};
-  --bg-color-second: ${(props) => props.theme.colors.backgroundColorSecond};
-  --main-color: ${(props) => props.theme.colors.mainColor};
-  --second-color: ${(props) => props.theme.colors.secondColor};
-  --text-color: ${(props) => props.theme.colors.textColor};
-  --third-color: ${(props) => props.theme.colors.thirdColor};
-  --fourth-color: ${(props) => props.theme.colors.fourthColor}; 
-  --fivth-color: ${(props) => props.theme.colors.fivthColor};   
+  --cream-color: ${(props) => props.theme.colors.creamColor};
+  --pastele-gree-color: ${(props) => props.theme.colors.pasteleGreenColor};
+  --fire-orange-color: ${(props) => props.theme.colors.fireOrangeColor};
+  --pastele-orange-color: ${(props) => props.theme.colors.pasteleOrangeColor};
+  --bottle-color: ${(props) => props.theme.colors.bottleColor};
+  --ocean-wave-color: ${(props) => props.theme.colors.oceanWaveColor};
+  --additional-color: ${(props) => props.theme.colors.additionalColor};  
   --font-family: ${(props) => props.theme.colors.fontFamily};  
   --font-family-second: ${(props) => props.theme.colors.fontFamilySecond}; 
   font-size: 22px;
 }
 
 body {
-  background-color: var(--bg-color-main);
+  background-color: var(--cream-color);
   font-family: var(--font-family);
-  color: var(--text-color);
+  color: var(--bottle-color);
 }
 
 /* NormalizeCSS - Reset css default values

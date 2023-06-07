@@ -47,7 +47,7 @@ const HamburgerButton = styled.div`
     width: 3em;
     height: 7px;
     border-radius: 3px;
-    background-color: var(--main-color);
+    background-color: var(--fire-orange-color);
     margin-top: 8px;
     transition: all 0.3s ease-in-out;
   }
