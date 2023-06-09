@@ -22,21 +22,21 @@ function MenuDock() {
   return (
     <StyledMenuDock>
       <IconContext.Provider value={{ color: 'var(--fire-orange-color)' }}>
-        <NavLink to='.' onClick={scrollTop}>
+        <StyledNavLink to='.' onClick={scrollTop}>
           <GrHomeRounded />
-        </NavLink>
+        </StyledNavLink>
 
-        <NavLink to='about'>
+        <StyledNavLink to='about'>
           <GrUser />
-        </NavLink>
+        </StyledNavLink>
 
-        <NavLink to='projects'>
+        <StyledNavLink to='projects'>
           <GrProjects />
-        </NavLink>
+        </StyledNavLink>
 
-        <NavLink to='contacts'>
+        <StyledNavLink to='contacts'>
           <GrMailOption />
-        </NavLink>
+        </StyledNavLink>
       </IconContext.Provider>
     </StyledMenuDock>
   )
@@ -62,7 +62,7 @@ const StyledMenuDock = styled.nav`
   gap: 12px;
   justify-content: center;
   overflow: visible;
-  padding: 8px 30px 2px 30px;
+  padding: 8px 30px;
 
   bottom: 12px;
   left: 50%;
@@ -74,5 +74,16 @@ const StyledMenuDock = styled.nav`
 
   svg path {
     stroke: var(--fire-orange-color);
+  }
+`
+
+const StyledNavLink = styled(NavLink)`
+  padding: 7px;
+  border: 2px solid var(--fire-orange-color);
+  display: flex;
+  border-radius: 10px;
+
+  &.active {
+    background-color: #df786152;
   }
 `

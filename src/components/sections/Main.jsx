@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import styled from 'styled-components'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import PortfolioContext from '../../context/PortfolioContext'
-import { Container, FlexCentered } from '../../styles/styles'
+import { Container, mixins } from '../../styles/styles'
 // import notebook from '../../assets/notebook.png'
 
 function Main() {
@@ -16,33 +16,35 @@ function Main() {
 
   return (
     <StyledWrapper>
-      <Container>
-        <FlexCentered>
-          <motion.div
-            style={{ x, y, rotateX, rotateY, z: 100 }}
-            drag
-            dragElastic={0.14}
-            dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
-            whileTap={{ cursor: 'grabbing' }}>
-            <h1>
-              {heroMainData.greeting} <span>{heroMainData.name}</span>
-            </h1>
-            <p>
-              {heroMainData.shortWelcomeText_1}
-              <span> {heroMainData.position}</span>{' '}
-              {heroMainData.shortWelcomeText_2}
-            </p>
-          </motion.div>
-          {/* <div>
+      <StyledContainer>
+        <motion.div
+          style={{ x, y, rotateX, rotateY, z: 100 }}
+          drag
+          dragElastic={0.14}
+          dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+          whileTap={{ cursor: 'grabbing' }}>
+          <h1>
+            {heroMainData.greeting} <span>{heroMainData.name}</span>
+          </h1>
+          <p>
+            {heroMainData.shortWelcomeText_1}
+            <span> {heroMainData.position}</span>{' '}
+            {heroMainData.shortWelcomeText_2}
+          </p>
+        </motion.div>
+        {/* <div>
           <img src={notebook} alt='' />
         </div> */}
-        </FlexCentered>
-      </Container>
+      </StyledContainer>
     </StyledWrapper>
   )
 }
 
 export default Main
+
+const StyledContainer = styled(Container)`
+  ${mixins.flexCentered}
+`
 
 const StyledWrapper = styled.section`
   h1 {

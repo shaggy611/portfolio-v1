@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 import logo from '../assets/menu_logo.png'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Logo() {
   return (
-    <StyledLogo>
-      <motion.img
-        src={logo}
-        alt='Logo'
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-      />
-    </StyledLogo>
+    <Link to='.'>
+      <StyledLogo>
+        <motion.img
+          src={logo}
+          alt='Logo'
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+        />
+      </StyledLogo>
+    </Link>
   )
 }
 
@@ -29,7 +32,6 @@ const StyledLogo = styled.div`
 
   img:hover {
     box-shadow: 0 1px 15px var(--fire-orange-color);
-    cursor: pointer;
   }
 
   img {

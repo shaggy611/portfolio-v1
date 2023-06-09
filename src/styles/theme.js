@@ -1,3 +1,5 @@
+import cursorIco from '../assets/cursorSmall.svg'
+
 const theme = {
     colors: {
         creamColor: '#FCF8E8',
@@ -11,7 +13,8 @@ const theme = {
         fontFamily: `'Advent Pro', sans-serif;`,
         fontFamilySecond: `'Londrina Outline', cursive;`
 
-    }
+    },
+    cursorIco: `url(${cursorIco}), auto`
 }
 
 export default theme;

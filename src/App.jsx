@@ -15,7 +15,6 @@ import Projects from './components/sections/Projects'
 function App() {
   const [hero, setHero] = useState({ ...heroData })
   const [menuActive, setMenuActive] = useState(false)
-  console.log(hero)
 
   // useEffect(() => {
   //   setHero({ ...heroData })

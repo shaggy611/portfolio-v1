@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   margin: 0px auto;
@@ -13,3 +13,13 @@ export const FlexCentered = styled.div`
   align-items: center;
   height: 100vh;
 `
+
+export const mixins = {
+  flexCentered: css`
+    display: flex;
+    /* -webkit-box-align: center;
+    align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+  `,
+}

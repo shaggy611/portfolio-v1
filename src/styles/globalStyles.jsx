@@ -12,12 +12,18 @@ const GlobalStyle = createGlobalStyle`
   --font-family: ${(props) => props.theme.colors.fontFamily};  
   --font-family-second: ${(props) => props.theme.colors.fontFamilySecond}; 
   font-size: 22px;
+  --cursor-pointer-ico: ${(props) => props.theme.cursorIco}
 }
 
 body {
   background-color: var(--cream-color);
   font-family: var(--font-family);
   color: var(--bottle-color);
+  cursor: var(--cursor-pointer-ico);
+}
+
+a {
+  cursor: var(--cursor-pointer-ico);
 }
 
 /* NormalizeCSS - Reset css default values
