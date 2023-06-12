@@ -3,7 +3,7 @@ import PortfolioContext from '../../context/PortfolioContext'
 import styled from 'styled-components'
 import { Container, mixins } from './../../styles/styles'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
-import SkillsList from '../SkillsList';
+import SkillsList from '../SkillsList'
 
 function About() {
   const { aboutData } = useContext(PortfolioContext)
@@ -17,7 +17,7 @@ function About() {
         </h2>
 
         <p>{aboutData.info}</p>
-        <SkillsList skills={aboutData.skills}/>
+        <SkillsList skills={aboutData.skills} />
       </StyledContainer>
     </StyledAbout>
   )
@@ -27,6 +27,7 @@ export default About
 
 const StyledContainer = styled(Container)`
   ${mixins.flexCentered}
+  max-width: 60%;
 `
 
 const StyledAbout = styled.section`

@@ -21,11 +21,22 @@ export default SkillsList
 
 const StyledSkillsList = styled.div`
   margin-top: 1.3rem;
+  max-width: 85%;
 
   ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul li {
+    border-radius: 20px;
+    background-color: #ecb3906f;
+    padding: 7px 15px 7px 15px;
+    margin: 8px;
   }
 `
