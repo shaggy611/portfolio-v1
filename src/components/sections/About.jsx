@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Container, mixins } from './../../styles/styles'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import SkillsList from '../SkillsList'
+import Jobs from '../Jobs'
 
 function About() {
   const { aboutData } = useContext(PortfolioContext)
@@ -16,8 +17,9 @@ function About() {
           <FaAngleRight />
         </h2>
 
-        <p>{aboutData.info}</p>
+        <p className='aboutText'>{aboutData.info}</p>
         <SkillsList skills={aboutData.skills} />
+        <Jobs jobs={aboutData.jobs} />
       </StyledContainer>
     </StyledAbout>
   )
@@ -27,7 +29,8 @@ export default About
 
 const StyledContainer = styled(Container)`
   ${mixins.flexCentered}
-  max-width: 60%;
+  max-width: 80%;
+  padding-bottom: 6rem;
 `
 
 const StyledAbout = styled.section`
@@ -44,9 +47,9 @@ const StyledAbout = styled.section`
     }
   }
 
-  p {
+  & .aboutText {
     margin-top: 1rem;
     font-size: 1rem;
-    color: var(--fire-orange-color);
+    /* color: var(--fire-orange-color); */
   }
 `

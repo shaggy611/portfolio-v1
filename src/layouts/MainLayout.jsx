@@ -10,7 +10,6 @@ function MainLayout() {
   return (
     <div ref={ref}>
       <Cursor ref={ref} />
-
       <Header />
       <MenuDock />
       <Outlet />
