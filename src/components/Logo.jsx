@@ -22,21 +22,20 @@ function Logo() {
 export default Logo
 
 const StyledLogo = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 3em;
-  left: 50%;
+  left: 15%;
   transform: translateX(-50%);
-  /* margin-left: -2em; */
   margin-top: -45px;
-  z-index: 5;
+  z-index: 5; */
 
   img:hover {
     box-shadow: 0 1px 15px var(--fire-orange-color);
   }
 
   img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     transition: box-shadow 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     border-radius: 50%;
   }

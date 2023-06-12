@@ -76,6 +76,6 @@ const StyledCursor = styled(motion.div)`
   background-color: #ecb390;
   border-radius: 50%;
   pointer-events: none;
-  filter: blur(80px);
+  filter: blur(100px);
   font-size: 16px;
 `

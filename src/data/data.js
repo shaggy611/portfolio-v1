@@ -14,7 +14,16 @@ const heroData = {
         fully transitioned into Front-end development. I'm passionate about Front-end
         and regularly upgrade my React skills. Seeking to join a React development
         team to collaborate with talented professionals and continue to grow my skills
-        and experience.`
+        and experience.`,
+        skills: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Bootstrap', 'React', 'Styled-Components', 'TailwindCSS', 'NodeJS', 'GIT', 'Firebase', 'Wordpress']
+    },
+
+    contactsData: {
+        github: 'https://github.com/shaggy611',
+        codepen: 'https://codepen.io/shaggy611',
+        linkedin: 'https://ua.linkedin.com/',
+        telegram: 'https://t.me/V_R0m',
+        email: 'sevczik11@gmail.com'
     }
 }
 
