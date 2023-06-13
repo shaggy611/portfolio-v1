@@ -48,30 +48,30 @@ const StyledContainer = styled(Container)`
 
 const StyledWrapper = styled.section`
   h1 {
-    font-size: 1.5rem;
-    color: var(--fire-orange-color);
-    font-weight: 500;
+    font-size: 1rem;
+    /* color: var(--fire-orange-color); */
+    /* font-weight: 500; */
   }
 
   h1 span {
-    font-size: 3rem;
+    /* font-size: 2rem; */
     font-family: var(--font-family-second);
-    color: var(--ocean-wave-color);
-    font-weight: 600;
+    color: var(--fire-orange-color);
+    /* font-weight: 600; */
   }
 
   p {
     margin-top: 1rem;
-    font-size: 1.6rem;
-    color: var(--fire-orange-color);
-    font-weight: 600;
+    /* font-size: 1.2rem; */
+    /* color: var(--fire-orange-color); */
+    /* font-weight: 600; */
   }
 
   p span {
-    font-size: 2.5rem;
+    /* font-size: 1.8rem; */
     font-family: var(--font-family-second);
-    color: var(--ocean-wave-color);
-    font-weight: 600;
+    color: var(--fire-orange-color);
+    /* font-weight: 600; */
   }
 
   img {

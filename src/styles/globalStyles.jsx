@@ -20,7 +20,6 @@ body {
   font-family: var(--font-family);
   color: var(--bottle-color);
   cursor: var(--cursor-pointer-ico);
-  background-image: url('https://github.com/shaggy611/portfolio-v1/blob/master/src/assets/rain.png');
 }
 
 a {

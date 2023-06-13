@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import logo from '../assets/menu_logo.png'
+import logo from '../assets/logo-outline.png'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 

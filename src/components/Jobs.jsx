@@ -35,7 +35,7 @@ Jobs.propTypes = {
 export default Jobs
 
 const StyledJobsWrapper = styled.div`
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 
   & .time-period {
     font-size: 0.8rem;

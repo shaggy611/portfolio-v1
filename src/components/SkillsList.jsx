@@ -20,7 +20,7 @@ SkillsList.propTypes = {
 export default SkillsList
 
 const StyledSkillsList = styled.div`
-  margin-top: 1.3rem;
+  margin-top: 3rem;
   max-width: 85%;
 
   ul {
