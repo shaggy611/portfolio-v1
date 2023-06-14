@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import PortfolioContext from '../../context/PortfolioContext'
 import { Container, mixins } from '../../styles/styles'
-// import notebook from '../../assets/notebook.png'
+import cover from '../../assets/cover.png'
 
 function Main() {
   const hero = useContext(PortfolioContext)
@@ -23,18 +23,19 @@ function Main() {
           dragElastic={0.14}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: 'grabbing' }}>
-          <h1>
+          <h1 className='line-before'>
             {heroMainData.greeting} <span>{heroMainData.name}</span>
           </h1>
-          <p>
+          <p className='line-after'>
             {heroMainData.shortWelcomeText_1}
             <span> {heroMainData.position}</span>{' '}
             {heroMainData.shortWelcomeText_2}
           </p>
+          <p className='line-before'>{heroMainData.shortWelcomeText_3}</p>
         </motion.div>
-        {/* <div>
-          <img src={notebook} alt='' />
-        </div> */}
+        <div>
+          <img src={cover} alt='' />
+        </div>
       </StyledContainer>
     </StyledWrapper>
   )
@@ -49,33 +50,80 @@ const StyledContainer = styled(Container)`
 const StyledWrapper = styled.section`
   h1 {
     font-size: 1rem;
-    /* color: var(--fire-orange-color); */
+    color: var(--fire-orange-color);
     /* font-weight: 500; */
+    display: flex;
+    align-items: baseline;
+    background-color: var(--bottle-color);
+    padding: 4px 17px;
+    border-radius: 5px;
+    width: fit-content;
+    filter: drop-shadow(8px 4px 5px black);
   }
 
   h1 span {
-    /* font-size: 2rem; */
-    font-family: var(--font-family-second);
+    font-family: var(--font-family);
     color: var(--fire-orange-color);
-    /* font-weight: 600; */
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 5px;
   }
 
   p {
     margin-top: 1rem;
     /* font-size: 1.2rem; */
-    /* color: var(--fire-orange-color); */
+    color: var(--fire-orange-color);
     /* font-weight: 600; */
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    background-color: var(--bottle-color);
+    padding: 4px 17px;
+    border-radius: 5px;
+    width: fit-content;
+    filter: drop-shadow(8px 4px 5px black);
   }
 
   p span {
-    /* font-size: 1.8rem; */
-    font-family: var(--font-family-second);
+    font-family: var(--font-family);
     color: var(--fire-orange-color);
-    /* font-weight: 600; */
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0 5px;
   }
 
   img {
-    max-width: 800px;
-    width: 100%;
+    max-width: 70%;
+    border-radius: 7px;
+    box-shadow: 20px 40px 20px #0000005a;
+    position: fixed;
+    top: 35%;
+    left: 26%;
+    z-index: -101;
+    filter: blur(5px);
+  }
+
+  .line-before::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: var(--fire-orange-color);
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .line-after::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: var(--fire-orange-color);
+    align-self: center;
+    margin-left: 20px;
   }
 `

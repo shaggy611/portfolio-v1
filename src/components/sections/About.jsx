@@ -38,9 +38,11 @@ const StyledAbout = styled.section`
 
   h2 {
     font-size: 2.2rem;
-    font-family: var(--font-family-second);
+    font-family: var(--font-family);
     color: var(--ocean-wave-color);
     font-weight: 600;
+    margin-bottom: 3%;
+    margin-top: 7%;
 
     svg {
       font-size: 2rem;

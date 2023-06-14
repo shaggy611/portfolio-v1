@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   --additional-color: ${(props) => props.theme.colors.additionalColor};  
   --font-family: ${(props) => props.theme.colors.fontFamily};  
   --font-family-second: ${(props) => props.theme.colors.fontFamilySecond}; 
-  font-size: 22px;
+  font-size: 20px;
   --cursor-pointer-ico: ${(props) => props.theme.cursorIco}
 }
 

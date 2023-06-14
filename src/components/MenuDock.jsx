@@ -47,7 +47,7 @@ export default MenuDock
 const StyledMenuDock = styled.nav`
   /* width: 15rem;
   height: 3rem; */
-  border: 2px solid var(--fire-orange-color);
+  border: 1px solid var(--fire-orange-color);
   border-radius: 10px;
   color: var(--fire-orange-color) !important;
 
@@ -70,7 +70,8 @@ const StyledMenuDock = styled.nav`
   transform: translateX(-50%);
   z-index: 2;
 
-  font-size: 1.3rem;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
 
   svg path {
     stroke: var(--fire-orange-color);
@@ -79,7 +80,7 @@ const StyledMenuDock = styled.nav`
 
 const StyledNavLink = styled(NavLink)`
   padding: 7px;
-  border: 2px solid var(--fire-orange-color);
+  border: 1px solid var(--fire-orange-color);
   display: flex;
   border-radius: 10px;
 

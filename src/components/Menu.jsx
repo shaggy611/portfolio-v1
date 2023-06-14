@@ -52,7 +52,7 @@ const MenuBlock = styled(motion.nav)`
 
   ul li a {
     font-size: 3.5rem;
-    font-family: var(--font-family-second);
+    font-family: var(--font-family);
     color: var(--ocean-wave-color);
     font-weight: 900;
     text-decoration: none;

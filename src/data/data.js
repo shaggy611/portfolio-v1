@@ -2,11 +2,12 @@ import imgCover from '../assets/cover.png'
 
 const heroData = {
     heroMainData: {
-        greeting: 'Hello, my name is',
+        greeting: 'Hello! 👋 I`m',
         name: 'Vsevolod',
-        position: 'Frontend Developer',
-        shortWelcomeText_1: 'I’m a',
-        shortWelcomeText_2: 'specializing in building (and occasionally designing) exceptional digital experiences.'
+        position: ' Frontend Developer ',
+        shortWelcomeText_1: 'I’m',
+        shortWelcomeText_2: 'based in Ukraine, making stuff and things with JavaScript and React.',
+        shortWelcomeText_3: 'My passion is about web dev and the implementation of interesting ideas into interactive web apps.'
     },
 
     aboutData: {

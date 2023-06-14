@@ -10,8 +10,8 @@ const theme = {
         oceanWaveColor: '#579BB1',
         additionalColor: '#EEE3CB',
 
-        fontFamily: `'Advent Pro', sans-serif;`,
-        fontFamilySecond: `'Londrina Outline', cursive;`
+        fontFamily: `'Epilogue', sans-serif;`,
+        fontFamilySecond: `'Press Start 2P', cursive;`
 
     },
     cursorIco: `url(${cursorIco}), auto`

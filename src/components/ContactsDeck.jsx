@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useContext } from 'react'
 import { TbBrandTelegram } from 'react-icons/tb'
-import { FiMail } from 'react-icons/fi'
+// import { FiMail } from 'react-icons/fi'
 import { ImCodepen } from 'react-icons/im'
-import { SlSocialLinkedin } from 'react-icons/sl'
+// import { SlSocialLinkedin } from 'react-icons/sl'
 import { FiGithub } from 'react-icons/fi'
 import PortfolioContext from '../context/PortfolioContext'
 
@@ -15,21 +15,21 @@ function ContactsDeck() {
     <StyledContactsDeck>
       <nav>
         <ul>
-          <li>
+          {/* <li>
             <Link to={`mailto:${contactsData.email}`}>
               <FiMail />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to={contactsData.telegram}>
               <TbBrandTelegram />
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={contactsData.linkedin}>
               <SlSocialLinkedin />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to={contactsData.github}>
               <FiGithub />
@@ -49,7 +49,7 @@ function ContactsDeck() {
 export default ContactsDeck
 
 const StyledContactsDeck = styled.div`
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
   min-height: 50px;
   /* position: absolute;
