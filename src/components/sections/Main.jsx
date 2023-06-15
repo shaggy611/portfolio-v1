@@ -3,11 +3,10 @@ import styled from 'styled-components'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import PortfolioContext from '../../context/PortfolioContext'
 import { Container, mixins } from '../../styles/styles'
-import cover from '../../assets/cover.png'
 
 function Main() {
   const hero = useContext(PortfolioContext)
-  const { heroMainData } = hero
+  const { heroMainData, coverImgMainScreen } = hero
 
   const x = useMotionValue(0)
   const y = useMotionValue(0)
@@ -34,7 +33,7 @@ function Main() {
           <p className='line-before'>{heroMainData.shortWelcomeText_3}</p>
         </motion.div>
         <div>
-          <img src={cover} alt='' />
+          <img src={coverImgMainScreen} alt='Cover' />
         </div>
       </StyledContainer>
     </StyledWrapper>
@@ -93,11 +92,11 @@ const StyledWrapper = styled.section`
   }
 
   img {
-    max-width: 70%;
+    max-width: 68%;
     border-radius: 7px;
     box-shadow: 20px 40px 20px #0000005a;
     position: fixed;
-    top: 35%;
+    top: 20%;
     left: 26%;
     z-index: -101;
     filter: blur(5px);

@@ -12,7 +12,8 @@ const GlobalStyle = createGlobalStyle`
   --font-family: ${(props) => props.theme.colors.fontFamily};  
   --font-family-second: ${(props) => props.theme.colors.fontFamilySecond}; 
   font-size: 20px;
-  --cursor-pointer-ico: ${(props) => props.theme.cursorIco}
+  --cursor-pointer-ico: ${(props) => props.theme.cursorIco};
+  --cursor-mask-color: ${(props) => props.theme.colors.cursorMaskColor};
 }
 
 body {
@@ -24,6 +25,19 @@ body {
 
 a {
   cursor: var(--cursor-pointer-ico);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--fire-orange-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bottle-color);
+  border-radius: 20px;
 }
 
 /* NormalizeCSS - Reset css default values

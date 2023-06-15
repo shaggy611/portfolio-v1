@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { TbBrandTelegram } from 'react-icons/tb'
 // import { FiMail } from 'react-icons/fi'
 import { ImCodepen } from 'react-icons/im'
-// import { SlSocialLinkedin } from 'react-icons/sl'
+import { FiLinkedin } from 'react-icons/fi'
 import { FiGithub } from 'react-icons/fi'
 import PortfolioContext from '../context/PortfolioContext'
 
@@ -25,11 +25,11 @@ function ContactsDeck() {
               <TbBrandTelegram />
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link to={contactsData.linkedin}>
-              <SlSocialLinkedin />
+              <FiLinkedin />
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link to={contactsData.github}>
               <FiGithub />
@@ -75,8 +75,8 @@ const StyledContactsDeck = styled.div`
     font-size: 1.3rem;
 
     & svg {
-      stroke: var(--fire-orange-color);
-      color: var(--fire-orange-color);
+      stroke: var(--bottle-color);
+      color: var(--bottle-color);
     }
   }
 `

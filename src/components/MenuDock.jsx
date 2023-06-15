@@ -47,9 +47,9 @@ export default MenuDock
 const StyledMenuDock = styled.nav`
   /* width: 15rem;
   height: 3rem; */
-  border: 1px solid var(--fire-orange-color);
+  border: 1px solid var(--bottle-color);
   border-radius: 10px;
-  color: var(--fire-orange-color) !important;
+  color: var(--bottle-color) !important;
 
   height: min-content;
   width: min-content;
@@ -72,19 +72,21 @@ const StyledMenuDock = styled.nav`
 
   font-size: 1rem;
   backdrop-filter: blur(10px);
+  background-color: #0000001a;
 
   svg path {
-    stroke: var(--fire-orange-color);
+    stroke: var(--bottle-color);
   }
 `
 
 const StyledNavLink = styled(NavLink)`
   padding: 7px;
-  border: 1px solid var(--fire-orange-color);
+  border: 1px solid var(--bottle-color);
   display: flex;
   border-radius: 10px;
+  background-color: #df786136;
 
   &.active {
-    background-color: #df786152;
+    background-color: var(--fire-orange-color);
   }
 `

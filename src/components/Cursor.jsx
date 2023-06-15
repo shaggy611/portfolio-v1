@@ -73,9 +73,9 @@ const StyledCursor = styled(motion.div)`
 
   height: 400px;
   width: 400px;
-  background-color: #ecb390;
+  background-color: var(--cursor-mask-color);
   border-radius: 50%;
   pointer-events: none;
-  filter: blur(100px);
+  filter: blur(170px);
   font-size: 16px;
 `

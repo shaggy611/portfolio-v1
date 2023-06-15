@@ -10,6 +10,8 @@ const heroData = {
         shortWelcomeText_3: 'My passion is about web dev and the implementation of interesting ideas into interactive web apps.'
     },
 
+    coverImgMainScreen: imgCover,
+
     aboutData: {
         info: `I am a Front-end developer with almost 2 years of commercial development
         experience. Previously, I worked for 5 years as a sysadmin and combined this
@@ -68,7 +70,7 @@ const heroData = {
         codepen: 'https://codepen.io/shaggy611',
         linkedin: 'https://ua.linkedin.com/',
         telegram: 'https://t.me/V_R0m',
-        email: 'sevczik11@gmail.com'
+        email: 'romanyuk.vsevolod@gmail.com'
     },
 
     projectsData: [{
@@ -85,7 +87,7 @@ const heroData = {
         projectDescription: 'It is a platform for conducting webinars and meetings, which allows you to share your screen, for example, to demonstrate presentations. Also, the platform has the ability to leave comments to participants while watching online webigars.',
         repoLink: '',
         demoLink: 'https://webinario.romaniuk-dev.com/',
-        usedTechnologies: ['React', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
+        usedTechnologies: ['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
     }, {
         projectName: 'GoogleKeep Lite Clone',
         projectImg: `${imgCover}`,
@@ -114,7 +116,8 @@ const heroData = {
         repoLink: 'https://github.com/shaggy611/kodi.guru',
         demoLink: 'https://kodi.guru/',
         usedTechnologies: ['HTML', 'CSS', 'Bootstrap', 'Javascript']
-    }]
+    }],
+    copyright: '© 2023. Created by Vsevolod Romaniuk'
 }
 
 export default heroData

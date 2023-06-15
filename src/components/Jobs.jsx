@@ -41,10 +41,17 @@ const StyledJobsWrapper = styled.div`
     font-size: 0.8rem;
     font-style: italic;
     margin-right: 2rem;
+    color: var(--fire-orange-color);
+    text-align: center;
   }
 
   & .company {
     color: var(--fire-orange-color);
+    font-weight: 600;
+  }
+
+  & .info {
+    font-weight: 500;
   }
 
   & .info ul {
@@ -55,6 +62,8 @@ const StyledJobsWrapper = styled.div`
 
   & .info ul li {
     margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 
   & .info ul li::before {
@@ -79,12 +88,12 @@ const StyledJobsWrapper = styled.div`
     content: '';
     display: block;
     position: relative;
-    top: 15px;
-    left: 30%;
+    top: 10px;
+    left: 50%;
     width: 1px;
-    height: calc(100% - 20px);
+    height: 100%;
     margin-bottom: 5px;
-    background-color: var(--pastele-orange-color);
+    background-color: var(--bottle-color);
   }
 `
 const JobsItemWrapper = styled.div`

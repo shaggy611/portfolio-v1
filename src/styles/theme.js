@@ -9,6 +9,7 @@ const theme = {
         bottleColor: '#025464',
         oceanWaveColor: '#579BB1',
         additionalColor: '#EEE3CB',
+        cursorMaskColor: '#ECB390',
 
         fontFamily: `'Epilogue', sans-serif;`,
         fontFamilySecond: `'Press Start 2P', cursive;`

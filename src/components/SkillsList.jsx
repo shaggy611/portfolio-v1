@@ -35,8 +35,10 @@ const StyledSkillsList = styled.div`
 
   ul li {
     border-radius: 20px;
-    background-color: #ecb3906f;
-    padding: 7px 15px 7px 15px;
+    background-color: var(--fire-orange-color);
+    padding: 7px 18px 4px 18px;
     margin: 8px;
+    font-weight: 500;
+    font-size: 0.8rem;
   }
 `
