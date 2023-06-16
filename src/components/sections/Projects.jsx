@@ -4,7 +4,7 @@ import { Container, mixins } from './../../styles/styles'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import styled from 'styled-components'
 import { AiFillGithub } from 'react-icons/ai'
-import { RxExternalLink } from 'react-icons/rx'
+import { BiLinkExternal } from 'react-icons/bi'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 function Projects() {
@@ -25,6 +25,11 @@ function Projects() {
               {projectsData.map((project) => {
                 return (
                   <Project key={project.projectName}>
+                    <div className='fakeTopPanel'>
+                      <span />
+                      <span />
+                      <span />
+                    </div>
                     <img src={project.projectImg} alt='Project Cover' />
                     <div className='project-text-area'>
                       <p className='project-name'>{project.projectName}</p>
@@ -43,7 +48,7 @@ function Projects() {
                           <AiFillGithub />
                         </a>
                         <a href={project.demoLink}>
-                          <RxExternalLink />
+                          <BiLinkExternal />
                         </a>
                       </div>
                     </div>
@@ -95,52 +100,109 @@ const ProjectsWrapper = styled.div`
 const Project = styled.div`
   /* display: grid;
   grid-template-columns: 30% 70%; */
+  border: 2px solid var(--bottle-color);
   background-color: rgba(30, 41, 59, 0.5);
   margin-bottom: 2rem;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   height: fit-content;
   width: 100%;
+  position: relative;
+  transition: all 0.5s ease-out 0s;
+
+  &:hover {
+    transform: rotate(1deg);
+  }
+
+  & .fakeTopPanel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: var(--bottle-color);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    padding-bottom: 3px;
+  }
+
+  & .fakeTopPanel span,
+  & .fakeTopPanel span:first-child,
+  & .fakeTopPanel span:last-child {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  & .fakeTopPanel span {
+    background-color: #eab308;
+  }
+
+  & .fakeTopPanel span:first-child {
+    background-color: #ef4444;
+  }
+
+  & .fakeTopPanel span:last-child {
+    background-color: #22c55e;
+  }
 
   & img {
     display: block;
     width: 100%;
     /* height: 100%; */
     /* border-radius: 20px 0 0 20px; */
-    border-radius: 20px 20px 0 0;
+    /* border-radius: 20px 20px 0 0; */
   }
 
   & .project-text-area {
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem 0.5rem 1rem;
     position: relative;
   }
 
   & .project-name {
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 1.2rem;
   }
 
   & .project-description {
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
+    font-weight: 300;
   }
 
   & .psoject-technologies {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 
   & .psoject-technologies div {
-    padding: 5px 14px;
+    padding: 5px 14px 3px 14px;
     border-radius: 20px;
-    background-color: rgba(236, 179, 144, 0.435);
+    background-color: var(--fire-orange-color);
     margin-right: 7px;
     margin-bottom: 7px;
   }
+
   & .projects-links {
     position: absolute;
-    top: 4%;
-    right: 3%;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    max-width: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .projects-links svg {
+    fill: var(--fire-orange-color);
   }
 `

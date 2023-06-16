@@ -11,14 +11,19 @@ import MainLayout from './layouts/MainLayout'
 import Main from './components/sections/Main'
 import About from './components/sections/About'
 import Projects from './components/sections/Projects'
+import Loader from './components/Loader'
 
 function App() {
   const [hero, setHero] = useState({ ...heroData })
   const [menuActive, setMenuActive] = useState(false)
+  const [loaded, setLoaded] = useState(false)
 
-  // useEffect(() => {
-  //   setHero({ ...heroData })
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true)
+    }, 2000)
+    setHero({ ...heroData })
+  }, [])
 
   return (
     <BrowserRouter>
@@ -26,6 +31,7 @@ function App() {
         <GlobalStyle />
         <PortfolioContext.Provider value={hero}>
           <MenuContext.Provider value={{ menuActive, setMenuActive }}>
+            <Loader loaded={loaded} />
             <Routes>
               <Route path='/' element={<MainLayout />}>
                 <Route index element={<Main />} />
