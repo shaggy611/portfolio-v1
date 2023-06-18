@@ -21,22 +21,34 @@ function ContactsDeck() {
             </Link>
           </li> */}
           <li>
-            <Link to={contactsData.telegram}>
+            <Link
+              to={contactsData.telegram}
+              target='_blank'
+              rel='noopener noreferrer'>
               <TbBrandTelegram />
             </Link>
           </li>
           <li>
-            <Link to={contactsData.linkedin}>
+            <Link
+              to={contactsData.linkedin}
+              target='_blank'
+              rel='noopener noreferrer'>
               <FiLinkedin />
             </Link>
           </li>
           <li>
-            <Link to={contactsData.github}>
+            <Link
+              to={contactsData.github}
+              target='_blank'
+              rel='noopener noreferrer'>
               <FiGithub />
             </Link>
           </li>
           <li>
-            <Link to={contactsData.codepen}>
+            <Link
+              to={contactsData.codepen}
+              target='_blank'
+              rel='noopener noreferrer'>
               <ImCodepen />
             </Link>
           </li>

@@ -101,13 +101,14 @@ const Project = styled.div`
   /* display: grid;
   grid-template-columns: 30% 70%; */
   border: 2px solid var(--bottle-color);
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: rgba(30, 41, 59, 0.1);
   margin-bottom: 2rem;
   /* border-radius: 20px; */
   height: fit-content;
   width: 100%;
   position: relative;
   transition: all 0.5s ease-out 0s;
+  border-radius: 10px;
 
   &:hover {
     transform: rotate(1deg);
@@ -125,6 +126,7 @@ const Project = styled.div`
     align-items: center;
     padding-left: 15px;
     padding-bottom: 3px;
+    border-radius: 10px 10px 0 0;
   }
 
   & .fakeTopPanel span,
@@ -153,6 +155,7 @@ const Project = styled.div`
   & img {
     display: block;
     width: 100%;
+    margin-top: 30px;
     /* height: 100%; */
     /* border-radius: 20px 0 0 20px; */
     /* border-radius: 20px 20px 0 0; */

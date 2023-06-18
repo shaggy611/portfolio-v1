@@ -1,4 +1,8 @@
 import imgCover from '../assets/cover.png'
+import keepClone from '../assets/keep_clone.png'
+import portfolio from '../assets/portfolio.png'
+import plantyx from '../assets/plantyx.png'
+import kodiGuru from '../assets/kodi_guru.png'
 
 const heroData = {
     heroMainData: {
@@ -75,7 +79,7 @@ const heroData = {
 
     projectsData: [{
         projectName: 'Personal-Portfolio-v1',
-        projectImg: `${imgCover}`,
+        projectImg: `${portfolio}`,
         projectDescription: 'My personal portfolio site. I designed this portfolio myself in a minimal style and focused on creating it using React.',
         repoLink: 'https://github.com/shaggy611/portfolio-v1',
         demoLink: 'https://romaniuk-dev.com/',
@@ -90,10 +94,11 @@ const heroData = {
         usedTechnologies: ['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
     }, {
         projectName: 'GoogleKeep Lite Clone',
-        projectImg: `${imgCover}`,
+        projectImg: `${keepClone}`,
         projectDescription: 'Google Keep clone is developed on pure javascript with the use of firebase features such as database and authentication. The web application has the possibility of creating a personal account and keeping notes, which allows you to use the application simultaneously both on a computer and on a smartphone.',
+        additionalData: 'Login and password for testing: test@email.com / 123456',
         repoLink: 'https://github.com/shaggy611/to_do_vanila_js/tree/app_with_auth',
-        demoLink: '',
+        demoLink: 'https://todo-vanillajs.web.app/',
         usedTechnologies: ['HTML', 'Vanilla JavaScript', 'Bootstrap', 'Firebase', 'Webpack']
     }, {
         projectName: 'Scanner.app Landing page',
@@ -104,14 +109,14 @@ const heroData = {
         usedTechnologies: ['HTML', 'CSS', 'Bootstrap', 'Javascript']
     }, {
         projectName: 'Plantyx.app Landing page',
-        projectImg: `${imgCover}`,
+        projectImg: `${plantyx}`,
         projectDescription: 'Product landing page developed for Plantyx.app',
         repoLink: 'https://github.com/shaggy611/plantyx',
         demoLink: 'https://plantyx.app/',
         usedTechnologies: ['HTML', 'CSS', 'Bootstrap', 'Javascript']
     }, {
         projectName: 'Kodi.guru',
-        projectImg: `${imgCover}`,
+        projectImg: `${kodiGuru}`,
         projectDescription: 'Product web site developed for Kodi.guru App',
         repoLink: 'https://github.com/shaggy611/kodi.guru',
         demoLink: 'https://kodi.guru/',
