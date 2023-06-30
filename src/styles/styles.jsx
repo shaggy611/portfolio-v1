@@ -6,6 +6,10 @@ export const Container = styled.div`
   max-width: 1400px;
   min-height: 60vh;
   padding: 0px 5rem;
+
+  @media (max-width: 767px) {
+    padding: 0px 2rem;
+  }
 `
 export const FlexCentered = styled.div`
   display: flex;

@@ -22,7 +22,7 @@ function App() {
     setTimeout(() => {
       setLoaded(true)
     }, 2000)
-    setHero({ ...heroData })
+    // setHero({ ...heroData })
   }, [])
 
   return (

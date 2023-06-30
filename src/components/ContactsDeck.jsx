@@ -64,6 +64,9 @@ const StyledContactsDeck = styled.div`
   max-width: 150px;
   width: 100%;
   min-height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   /* position: absolute;
   top: 4em;
   right: 0%;
@@ -85,6 +88,7 @@ const StyledContactsDeck = styled.div`
     list-style: none;
     justify-content: space-between;
     font-size: 1.3rem;
+    min-width: 150px;
 
     & svg {
       stroke: var(--bottle-color);

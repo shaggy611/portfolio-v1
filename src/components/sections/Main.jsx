@@ -125,4 +125,36 @@ const StyledWrapper = styled.section`
     align-self: center;
     margin-left: 20px;
   }
+
+  @media (max-width: 767px) {
+    margin-top: 3rem;
+    line-height: 1.5rem;
+
+    .line-after::after,
+    .line-before::before {
+      display: none;
+    }
+
+    h1 span {
+      font-family: var(--font-family);
+      color: var(--fire-orange-color);
+      font-weight: 900;
+      font-size: 1.3rem;
+      margin-left: 5px;
+    }
+
+    p {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      padding: 15px 17px;
+    }
+
+    p span {
+      font-weight: 900;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
 `

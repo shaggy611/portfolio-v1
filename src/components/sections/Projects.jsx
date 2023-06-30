@@ -69,6 +69,11 @@ const StyledContainer = styled(Container)`
   ${mixins.flexCentered}
   max-width: 80%;
   padding-bottom: 6rem;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding-bottom: 6rem;
+  }
 `
 
 const StyledProjects = styled.section`
@@ -207,5 +212,8 @@ const Project = styled.div`
 
   & .projects-links svg {
     fill: var(--fire-orange-color);
+  }
+
+  @media (max-width: 767px) {
   }
 `

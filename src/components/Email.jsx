@@ -41,4 +41,9 @@ const StyledEmail = styled.div`
     width: 100px;
     background: var(--bottle-color);
   }
+
+  @media (max-width: 767px) {
+    bottom: 4rem;
+    right: -8rem;
+  }
 `

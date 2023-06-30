@@ -39,4 +39,11 @@ const StyledLogo = styled.div`
     transition: box-shadow 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     border-radius: 50%;
   }
+
+  @media(max-width: 767px) {
+    img {
+    width: 2rem;
+    height: 2rem;
+  }
+  }
 `

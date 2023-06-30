@@ -35,4 +35,9 @@ const StyledCopyright = styled.div`
     width: 100px;
     background: var(--bottle-color);
   }
+
+  @media (max-width: 767px) {
+    bottom: 5.4rem;
+    left: -9.4rem;
+  }
 `
