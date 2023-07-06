@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons'
 
 import { GrHomeRounded } from 'react-icons/gr'
 import { GrUser } from 'react-icons/gr'
-import { GrMailOption } from 'react-icons/gr'
+// import { GrMailOption } from 'react-icons/gr'
 import { GrProjects } from 'react-icons/gr'
 
 function MenuDock() {
@@ -34,9 +34,9 @@ function MenuDock() {
           <GrProjects />
         </StyledNavLink>
 
-        <StyledNavLink to='contacts'>
+        {/* <StyledNavLink to='contacts'>
           <GrMailOption />
-        </StyledNavLink>
+        </StyledNavLink> */}
       </IconContext.Provider>
     </StyledMenuDock>
   )
