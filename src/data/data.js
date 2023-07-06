@@ -72,7 +72,7 @@ const heroData = {
     contactsData: {
         github: 'https://github.com/shaggy611',
         codepen: 'https://codepen.io/shaggy611',
-        linkedin: 'https://ua.linkedin.com/',
+        linkedin: 'https://www.linkedin.com/in/vsevolod-romaniuk-544265282/',
         telegram: 'https://t.me/V_R0m',
         email: 'romanyuk.vsevolod@gmail.com'
     },
@@ -85,14 +85,16 @@ const heroData = {
         demoLink: 'https://romaniuk-dev.com/',
         usedTechnologies: ['React', 'Styled-Components', 'Framer-Motion']
 
-    }, {
-        projectName: 'Webinar Platform',
-        projectImg: `${imgCover}`,
-        projectDescription: 'It is a platform for conducting webinars and meetings, which allows you to share your screen, for example, to demonstrate presentations. Also, the platform has the ability to leave comments to participants while watching online webigars.',
-        repoLink: '',
-        demoLink: 'https://webinario.romaniuk-dev.com/',
-        usedTechnologies: ['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
-    }, {
+    },
+    // {
+    //     projectName: 'Webinar Platform',
+    //     projectImg: `${imgCover}`,
+    //     projectDescription: 'It is a platform for conducting webinars and meetings, which allows you to share your screen, for example, to demonstrate presentations. Also, the platform has the ability to leave comments to participants while watching online webigars.',
+    //     repoLink: '',
+    //     demoLink: 'https://webinario.romaniuk-dev.com/',
+    //     usedTechnologies: ['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
+    // }, 
+    {
         projectName: 'GoogleKeep Lite Clone',
         projectImg: `${keepClone}`,
         projectDescription: 'Google Keep clone is developed on pure javascript with the use of firebase features such as database and authentication. The web application has the possibility of creating a personal account and keeping notes, which allows you to use the application simultaneously both on a computer and on a smartphone.',
