@@ -5,6 +5,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import styled from 'styled-components'
 import { AiFillGithub } from 'react-icons/ai'
 import { BiLinkExternal } from 'react-icons/bi'
+import { RxNotionLogo } from 'react-icons/rx'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 function Projects() {
@@ -20,7 +21,7 @@ function Projects() {
 
         <ProjectsWrapper>
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}>
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 1, 1200: 2 }}>
             <Masonry gutter={'3%'}>
               {projectsData.map((project) => {
                 return (
@@ -43,11 +44,38 @@ function Projects() {
                           </div>
                         ))}
                       </div>
+                      <div className='projects-additional-info'>
+                        {project.repoServerLink &&
+                        project.notionDataBaseLink ? (
+                          <div className='projects-additional-link'>
+                            <a
+                              href={project.repoServerLink}
+                              target='_blank'
+                              rel='noreferrer'>
+                              <AiFillGithub /> Server Code Repo
+                            </a>
+                            <a
+                              href={project.notionDataBaseLink}
+                              target='_blank'
+                              rel='noreferrer'>
+                              <RxNotionLogo /> Notion Database
+                            </a>
+                          </div>
+                        ) : (
+                          ''
+                        )}
+                      </div>
                       <div className='projects-links'>
-                        <a href={project.repoLink}>
+                        <a
+                          href={project.repoLink}
+                          target='_blank'
+                          rel='noreferrer'>
                           <AiFillGithub />
                         </a>
-                        <a href={project.demoLink}>
+                        <a
+                          href={project.demoLink}
+                          target='_blank'
+                          rel='noreferrer'>
                           <BiLinkExternal />
                         </a>
                       </div>
@@ -212,6 +240,26 @@ const Project = styled.div`
 
   & .projects-links svg {
     fill: var(--fire-orange-color);
+    cursor: pointer;
+  }
+
+  & .projects-additional-link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & .projects-additional-link a {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    /* text-decoration: none; */
+    color: var(--bottle-color);
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  & .projects-additional-link a svg {
+    margin-right: 0.5rem;
   }
 
   @media (max-width: 767px) {
