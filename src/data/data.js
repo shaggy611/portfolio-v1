@@ -3,6 +3,8 @@ import keepClone from '../assets/keep_clone.png'
 import portfolio from '../assets/portfolio.png'
 import plantyx from '../assets/plantyx.png'
 import kodiGuru from '../assets/kodi_guru.png'
+import remembify from '../assets/remembify.png'
+import scannerApp from '../assets/scanner.png'
 
 const heroData = {
     heroMainData: {
@@ -95,6 +97,16 @@ const heroData = {
     //     usedTechnologies: ['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'Express', 'Firebase', 'WebsocketsIO']
     // }, 
     {
+        projectName: 'Remembify',
+        projectImg: `${remembify}`,
+        projectDescription: 'Remembify is a simple SPA built with React on the client and Express on the server. Remembify uses NotionAPI as a Database for fetching random English-Ukrainian pair of words. I have built this app to help myself for training to remember new words from my English course lessons. During my English course, I wrote new words in Notion Table and then I could with Remembify train new words.',
+        repoLink: 'https://github.com/shaggy611/portfolio-v1',
+        repoServerLink: 'https://github.com/shaggy611/Remembify-server',
+        notionDataBaseLink: 'https://six-scorpion-8f5.notion.site/c0155dc88e2641989a825493ec4e1a3d?v=313c4f90fd4d4263a938f362339d37e7',
+        demoLink: 'https://remembify.netlify.app',
+        usedTechnologies: ['React', 'TypeScript', 'MUI', 'TailwindCSS', 'NotionAPI', 'ExpressJS']
+
+    }, {
         projectName: 'GoogleKeep Lite Clone',
         projectImg: `${keepClone}`,
         projectDescription: 'Google Keep clone is developed on pure javascript with the use of firebase features such as database and authentication. The web application has the possibility of creating a personal account and keeping notes, which allows you to use the application simultaneously both on a computer and on a smartphone.',
@@ -104,10 +116,10 @@ const heroData = {
         usedTechnologies: ['HTML', 'Vanilla JavaScript', 'Bootstrap', 'Firebase', 'Webpack']
     }, {
         projectName: 'Scanner.app Landing page',
-        projectImg: `${imgCover}`,
+        projectImg: `${scannerApp}`,
         projectDescription: 'Product landing page developed for Scanner.app',
         repoLink: 'https://github.com/shaggy611/scanner.app',
-        demoLink: '',
+        demoLink: 'https://scannerappdemo.netlify.app/',
         usedTechnologies: ['HTML', 'CSS', 'Bootstrap', 'Javascript']
     }, {
         projectName: 'Plantyx.app Landing page',
