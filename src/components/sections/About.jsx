@@ -41,12 +41,16 @@ const StyledContainer = styled(Container)`
   ${mixins.flexCentered}
   max-width: 80%;
   padding-bottom: 6rem;
+
+  @media (max-width: 992px) {
+    max-width: 95%;
+  }
 `
 
 const StyledAbout = styled.section`
   /* background-color: var(--additional-color); */
 
-  h2 {
+  & h2 {
     font-size: 2.2rem;
     font-family: var(--font-family);
     color: var(--ocean-wave-color);
@@ -54,7 +58,7 @@ const StyledAbout = styled.section`
     margin-bottom: 3%;
     margin-top: 7%;
 
-    svg {
+    & svg {
       font-size: 2rem;
     }
   }
@@ -64,6 +68,16 @@ const StyledAbout = styled.section`
     font-size: 1rem;
     font-weight: 300;
     /* color: var(--fire-orange-color); */
+  }
+
+  @media (max-width: 767px) {
+    & h2 {
+      font-size: 1.7rem;
+
+      & svg {
+        font-size: 1.4rem;
+      }
+    }
   }
 `
 
@@ -107,5 +121,9 @@ const ImageSection = styled.div`
     & svg {
       opacity: 0;
     }
+  }
+
+  @media (max-width: 992px) {
+    display: none;
   }
 `

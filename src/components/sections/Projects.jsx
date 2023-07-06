@@ -105,7 +105,7 @@ const StyledContainer = styled(Container)`
 `
 
 const StyledProjects = styled.section`
-  h2 {
+  & h2 {
     font-size: 2.2rem;
     font-family: var(--font-family);
     color: var(--ocean-wave-color);
@@ -113,8 +113,19 @@ const StyledProjects = styled.section`
     margin-bottom: 3%;
     margin-top: 7%;
 
-    svg {
+    & svg {
       font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & h2 {
+      font-size: 1.7rem;
+      margin-bottom: 20%;
+
+      & svg {
+        font-size: 1.4rem;
+      }
     }
   }
 `

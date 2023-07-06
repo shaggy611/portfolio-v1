@@ -95,9 +95,46 @@ const StyledJobsWrapper = styled.div`
     margin-bottom: 5px;
     background-color: var(--bottle-color);
   }
+
+  @media (max-width: 991px) {
+    & .info ul::before {
+      width: 100%;
+    }
+
+    & .time-period {
+      font-size: 0.7rem;
+      margin-right: 1.6rem;
+      text-align: left;
+    }
+
+    & .info ul li {
+      margin-bottom: 0.8rem;
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+
+    & .info ul li::before {
+      left: -20px;
+    }
+
+    & .time-period::after {
+      top: 10px;
+      left: 50%;
+      margin-bottom: 5px;
+      height: calc(100% - 75px);
+    }
+
+    & .info p {
+      font-size: 0.9rem;
+    }
+  }
 `
 const JobsItemWrapper = styled.div`
   display: grid;
   grid-template-columns: 2fr 3fr;
   margin-top: 5%;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 7fr;
+  }
 `
